@@ -30,7 +30,7 @@
         const name =$("#name").val()
         const day =$("#day").val()
         const time =$("#time").val()
-        const restTime =$("#helf").val()
+        const restTime =$('input[name="restTime"]:checked').val();
         const time_leave =$("#time_leave").val()
         const text =$("#text").val()
 
@@ -38,7 +38,7 @@
           name:$("#name").val(),
           day:$("#day").val(),
           time:$("#time").val(),
-          restTime:$("#helf").val(),
+          restTime:$('input[name="restTime"]:checked').val(),
           time_leave:$("#time_leave").val(),
           text:$("#text").val(),
         }
@@ -49,7 +49,7 @@
         $("#name").val("");
         $("#day").val("");
         $("#time").val("");
-        $("#helf").val("");
+        $('input[name="restTime"]:checked').val("");
         $("#time_leave").val("");
         $("#text").val("");
        
@@ -80,10 +80,18 @@
           $("#output").append(html)
           $("#output").fadeIn(html)
           $("#output").addClass("rireki")
+          $(".close").fadeIn(2000)
         })
 
 
       })
+
+      $(".close").on("click",function(){
+        $("#output").removeClass("rireki")
+        $(this).hide()
+      })
+
+     
 
       $(".s1").on("click",function(){
         $(".kintai_name").fadeToggle();
@@ -108,6 +116,16 @@
       $(".s6").on("click",function(){
         $(".kintai_text").fadeToggle();
       })
+
+
+      $(".manu_icon").on("click",function(){
+        $(".star_wrap").fadeIn()
+      })
+
+
+      
+
+
 
       //データ登録(Enter)
 

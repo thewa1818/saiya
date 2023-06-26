@@ -253,8 +253,8 @@ textarea {
 
 .close{
   position: absolute;
-  top: 60px;
-  right: 300px;
+  top: 80px;
+  right: 400px;
   cursor: pointer;
   display: none;
   z-index: 2;
@@ -288,7 +288,7 @@ textarea {
 
 .shenron{
   position: absolute;
-  left: 30px;
+  left: 70px;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -296,9 +296,13 @@ textarea {
   animation-name: anim_po; 
 }
 
+.reader,.mail ,.yashi{
+  display: none;
+}
+
 @keyframes anim_po {
     0% {
-      top: 320px;
+      top: 420px;
     }
     100% {
       top: 250px;
@@ -350,45 +354,59 @@ textarea {
     .kintai_menu {
       position: absolute;
       z-index: 5;
-      top: 80px;
+      top: 60px;
+      left: 50px;
       right: 0px;
       margin: 10px;
       width: 250px;
      }
 
      .kintai_name ,.kintai_data,.kintai_rest,.kintai_time,.kintai_leave,.kintai_text{
+      position: relative;
+      top: 0;
       color: black;
       font-size: 15px;
-      display: block;
+      /* display: block; */
       text-align: start;
-      border-radius: 0px;
-      padding: 6px;
-      margin: 10px;
+      border-radius: 5px;
+      padding: 12px;
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: 300px;
+      
     }
 
     #name {
-      display: block;
+      position: absolute;
+      top: 6px;
+      /* height: 30px; */
+      /* display: block; */
       font-size: 10px;
       width: 200px;
-      padding: 8px;
+      padding: 5px;
     }
     
     
     input#day , input#time , input#time_leave  {
+      position: absolute;
       font-size: 10px;
-      width: 200px;
-      padding: 8px;
-      display: block;
+      width: 150px;
+      padding: 5px;
+      top: 6px;
+      /* display: block; */
     }
     
     label {
-      display: block;
-      padding: 5px;
+      /* display: block; */
+      position: relative;
+      /* width: 150px; */
+      padding: 0px;
       font-size: 13px;
     }
     
     textarea {
-      display: block;
+      /* display: block; */
       width: 220px;
       height: 100px;
       padding: 10px;
@@ -398,7 +416,7 @@ textarea {
 
     
      .s1{
-      top: 10px;
+      top: 2px;
       right: 0px;
       left: 20px;
       bottom: 0;
@@ -493,6 +511,110 @@ textarea {
       position: relative;
       display: none;
       }
+
+      .rireki p {
+        color: purple;
+        font-size: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px  solid #fff;
+        background-color: #ffffff3e;
+        font-weight: bold;
+      }
+      
+      .rireki {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background:url(../img/8.jpg) no-repeat center /cover;
+        width: 400px;
+        padding: 50px;
+        border-radius: 30px;
+        z-index: 2;
+      }
+
+      .close{
+        position: absolute;
+        top: 80px;
+        right: 70px;
+        cursor: pointer;
+        display: none;
+        z-index: 2;
+      }
+      
+      .close img {
+        width: 30px;
+        height: 30px;  
+      }
+
+      .reader {
+        display: block;
+        cursor: pointer;
+        transition: 0.3s;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+      }
+
+      .reader:hover{
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+
+      .reader img {
+        display: block;
+        width: 50px;
+        height: 60px;
+      }
+
+      .mail {
+        display: block;
+        cursor: pointer;
+        transition: 0.3s;
+        position: absolute;
+        top: 170px;
+        right: 25px;
+      }
+
+      .mail:hover{
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+
+      .mail img {
+        display: block;
+        width: 40px;
+        height: 50px;
+      }
+
+      .yashi {
+        display: block;
+        cursor: pointer;
+        transition: 0.3s;
+        position: absolute;
+        top: 250px;
+        right: 25px;
+      }
+
+      .yashi:hover{
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+
+      .yashi img {
+        display: block;
+        width: 40px;
+        height: 50px;
+      }
+
+
+    
+
+
  
 
      

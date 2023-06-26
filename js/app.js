@@ -81,6 +81,11 @@
           $("#output").fadeIn(html)
           $("#output").addClass("rireki")
           $(".close").fadeIn(2000)
+
+          $(".reader").on("click",function(){
+            $(".#output").fadeToggle()
+           
+          })
         })
 
 
@@ -88,7 +93,7 @@
 
       $(".close").on("click",function(){
         $("#output").removeClass("rireki")
-        $(this).hide()
+        $(this).removeClass()
       })
 
      
@@ -119,8 +124,11 @@
 
 
       $(".manu_icon").on("click",function(){
-        $(".star_wrap").fadeIn()
+        $(".star_wrap").fadeToggle()
+       
       })
+
+     
 
 
       
